@@ -1,0 +1,21 @@
+.header{
+    display: flex;
+    align-items: center;
+    height: 65px;
+    justify-content: space-between;
+    padding: 1em;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: white;
+    &__title{
+        margin-right: auto;
+        margin-bottom: 0 !important;
+    }
+    &__img{
+        margin-right: 1em;
+    }
+    &__text{
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 0 !important;
+    }
+}

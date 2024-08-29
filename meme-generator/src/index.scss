@@ -1,0 +1,22 @@
+// Import all of Bootstrap's CSS
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  margin: 0;
+}
+
+.c-section{
+  @extend .py-4;
+}
+
+.wrap{
+  @include media-breakpoint-up(sm){
+    padding: 0 7em;
+  }
+  padding: 0 2em;
+}

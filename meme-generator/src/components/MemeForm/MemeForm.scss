@@ -1,0 +1,27 @@
+.meme-form{
+    .form-label{
+        color: #374151 !important;
+        font-weight: 200 !important;
+    }
+    input{
+        &::placeholder{
+            color: #6B7280 !important;
+        }
+    }
+    button{
+        height: 40px;
+        border-radius: 5px;
+        background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+        color: white;
+        font-weight: 600;
+        &:hover{
+            color: white !important;
+        }
+    }
+    &-container{
+        padding: 3em 0;
+        img{
+            max-height: 450px;
+        }
+    }
+}
