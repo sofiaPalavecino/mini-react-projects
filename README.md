@@ -2,6 +2,8 @@
 
 These mini projects are part of the guided practices of Coursera’s course **Learn React**, dictated by Scrimba.
 
+*These projects aren't fully functional sites. They are only educational oriented.*
+
 ---
 
 The course is composed of **4 modules**. These are the learning objectives of each one of them
