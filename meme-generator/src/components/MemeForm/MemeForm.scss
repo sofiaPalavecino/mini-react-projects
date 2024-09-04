@@ -1,3 +1,5 @@
+
+@import "../node_modules/bootstrap/scss/bootstrap";
 .meme-form{
     .form-label{
         color: #374151 !important;
@@ -19,9 +21,44 @@
         }
     }
     &-container{
-        padding: 3em 0;
+        margin: 3em 0;
+        position: relative;
         img{
-            max-height: 450px;
+            max-height: 500px;
+            @include media-breakpoint-up(lg){
+                height: 500px;
+            }
+        }
+        &__text{
+            overflow-wrap: break-word;
+            position: absolute;
+            max-width: 80%;
+            text-align: center;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 15px 15px;
+            padding: 0 5px;
+            font-family: impact, sans-serif;
+            font-size: 2em;
+            text-transform: uppercase;
+            color: white;
+            letter-spacing: 1px;
+            text-shadow:
+                2px 2px 0 #000,
+                -2px -2px 0 #000,
+                2px -2px 0 #000,
+                -2px 2px 0 #000,
+                0 2px 0 #000,
+                2px 0 0 #000,
+                0 -2px 0 #000,
+                -2px 0 0 #000,
+                2px 2px 5px #000;
+            &.top{
+                top: 0;
+            }
+            &.bottom{
+                bottom: 0;
+            }
         }
     }
 }
