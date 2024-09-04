@@ -31,7 +31,7 @@ The course is composed of **4 modules**. These are the learning objectives of ea
 
 ### Module 3 📓
 
-**In progress** 👩🏻‍💻
+**Done** ✅
 
 - Event listeners
 - Using state
@@ -46,7 +46,7 @@ The course is composed of **4 modules**. These are the learning objectives of ea
 
 ### Module 4 📓
 
-**Next in line** 😉
+**In progress** 👩🏻‍💻
 
 - Lazy state initialization
 - Updating to Vite
