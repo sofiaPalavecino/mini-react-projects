@@ -13,20 +13,11 @@ export default function MemeForm() {
     })
     const [allImg, setAllImg] = React.useState([]);
 
-    const elementRef = React.useRef(null);
-
     React.useEffect( () => {
         fetch("https://api.imgflip.com/get_memes")
         .then(res => res.json())
         .then(data => setAllImg(data.data.memes))
     }, [])
-
-    const htmlToImageConvert = async () => {
-        console.log(elementRef.current)
-        const canvas = await html2canvas(elementRef.current);
-        const dataURL = canvas.toDataURL('image/png');
-        downloadjs(dataURL, 'your-meme.png', 'image/png');
-    };
 
     function setMemeSource(){
         const memeIndex = Math.floor(Math.random() * allImg.length);
@@ -67,7 +58,6 @@ export default function MemeForm() {
                         <h2 className='meme-form-container__text top'>{meme.topText}</h2>
                         <h2 className='meme-form-container__text bottom'>{meme.bottomText}</h2>
                     </div>
-                    <button className='w-100 mt-3 btn' onClick={htmlToImageConvert}>Download your meme!</button>
                 </div>
             </div>
         </section>
