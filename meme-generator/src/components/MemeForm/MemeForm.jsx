@@ -53,7 +53,7 @@ export default function MemeForm() {
                         </div>
                     </div>
                     <button className='w-100 mt-3 btn' onClick={setMemeSource}>Get a new meme image</button>
-                    <div ref={elementRef} className="meme-form-container">
+                    <div className="meme-form-container">
                         <img className='img-fluid img-thumbnail mx-auto d-block' src={`${meme.randomImage}`} />
                         <h2 className='meme-form-container__text top'>{meme.topText}</h2>
                         <h2 className='meme-form-container__text bottom'>{meme.bottomText}</h2>

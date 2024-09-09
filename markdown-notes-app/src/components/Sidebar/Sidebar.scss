@@ -1,0 +1,58 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+.sidebar{
+    min-width: 300px;
+    &--header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+        border-bottom: 1px solid #e3e3e3;
+        h3 {
+            margin: 0;
+            color: #888;
+        }
+    }
+    .title{
+        height: 65px;
+        padding: 0.8em 0.5em;
+        font-size: 1.5em;
+        margin: 0.5em;
+        overflow: hidden;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 6px;
+        span {
+            padding-inline: 5px;
+            line-height: 1.2rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            &:nth-child(1){
+                font-weight: bold;
+                font-size: 15px;
+            }
+            &:nth-child(2){
+                font-size: 13px;
+                color: #7b7b7b;
+            }
+        }
+        &.-selected-note{
+            background-color: #e3e3e3;
+            -webkit-transition: 
+                background-color 100ms linear,
+                    color 100ms linear;
+        }
+        .content{
+            display: grid;
+        }
+    }
+    .delete-btn{
+        margin-left: 0.5em;
+    }
+    .delete-all{
+        margin-left: 1em;
+    }
+}
