@@ -49,9 +49,9 @@ The course is composed of **4 modules**. These are the learning objectives of ea
 **In progress** 👩🏻‍💻
 
 - Lazy state initialization
-- Updating to Vite
-- Small refactors
-- Local setup
+- Final Projects
+  - Markdown Notes App
+  - Tenzies
 
 ---
 
