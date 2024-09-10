@@ -46,7 +46,7 @@ The course is composed of **4 modules**. These are the learning objectives of ea
 
 ### Module 4 📓
 
-**In progress** 👩🏻‍💻
+**Done** ✅
 
 - Lazy state initialization
 - Final Projects
